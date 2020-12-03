@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 30px; /* Asta nu ramane asa */
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 80px 50px;
+    padding: 30px 30px;
+}
+
+#header {
+    padding: 0px 30px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px grey;
+}
+
+#header-img {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    height: 100px;
+}
+
+.lower-nav {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.lower-nav a {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    margin: 10px 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.lower-nav a:hover {
+  text-decoration: underline;
+}
+
+.bluegrass {
+    width: 180px;
+}
+
+#main img {
+    width: 100%;
+    height: auto;
+    margin-top: 99px;
+}
+
+#main ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.presentation-menu h2 {
+    font-size: 50px;
+}
+
+.presentation-menu p {
+    text-align: center;
+    padding: 20px 80px;
+    margin: 40px 60px;
+    color: #393E41;
+}
+
+.helm-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.helm-nav a {
+ text-decoration: none;
+ color: black;
+ padding: 0px 40px;
+ margin: 0px 10px;
+ font-size: 25px;
+ background-color: #fff;
+ border: 1px solid black;
+ box-shadow: 10px 15px 3px #D9D9D9;
+ border-radius: 10px;
+ text-shadow: 1px 1px 2px black; 
+}
+
+.helm-nav a:hover {
+box-shadow: 0px 0px 0px;
+text-shadow: 0px 0px 0px;
+background-color: #D9D9D9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box-1, .box-2, .box-3 {
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    box-shadow: -15px 10px 5px #ccc;
+    align-items: flex-start;
+}
+
+.instagram {
+    background-color: #fff;
+    margin: 30px 30px;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.insta-button a, .insta-button {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.fa-instagram {
+    color: transparent;
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.insta-button:hover {
+    opacity: 0.8;
+}
+/* while hoovering over insta-button, make the insta logo linear-gradient colors so it changes to real instagram colors */
+ 
+
+
+footer {
+    background-color: black;
+    margin-top: 100px;
+    color: #fff;
+}
+
+#upper-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form, .contact-form a, .contact-form ul {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.contact-form a:hover {
+    text-decoration: underline;
+}
+
+.social-media, .social-media a {
+    font-size: 50px;
+    margin: 0px 25px;
+    color: #D9D9D9;
+}
+
+.my-account, .my-account a, .my-account p {
+    font-size: 20px;
+    color: #fff;;
+}
+
+.my-account a:hover {
+    text-decoration: underline;
+}
+
+.newsletter-form p, .newsletter-form form {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.newsletter-form form  {
+    padding: 0px 30px;
+}
+
+.newsletter-form input {
+    padding: 10px 80px; 
+}
+
+.about-us {
+    padding: 30px 100px;
+}
+
+#bottom-footer {
+    background-color: #fff;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+/* Invata cum sa pui textul intr-un flex container sub o imagine */
+
+@media (max-width: 600px){
+    #header {
+      background-color: red;
+      position: fixed;
+      padding: 0px;
+      width: 100%;
+      height: auto;
+    }
+
+    #header-img {
+        display:  flex;
+    }
+
+    #nav-bar {
+        flex-flow: wrap-reverse;
+flex-direction: column;
+background-color: #595758;
+padding: 30px 10px;
+    }
+
+    /* Trebuie sa faci drop-down menu la navigatie cand e vorba de responsive design */
+}
+
+    
+
+
